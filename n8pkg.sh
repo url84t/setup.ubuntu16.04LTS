@@ -6,8 +6,38 @@ sudo apt-get install -y vim
 sudo apt-get install -y git
 sudo apt-get install -y terminator
 sudo apt-get install -y chromium-browser
+#sudo apt-get install -y slack
 sudo apt-get install -y gdm
+sudo apt-get install -y evolution
 #sudo apt-get install -y vim
+
+## Slack
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.2-amd64.deb
+sudo dpkg -i slack-desktop-2.1.2-amd64.deb
+
+## Atom repository
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get install -y atom
+
+## Sun Java
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install -y java-common oracle-java8-installer
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get install -y oracle-java8-set-default
+source /etc/profile
+
+## Php Storm
+wget https://download.jetbrains.com/webide/PhpStorm-2016.2.1.tar.gz
+tar xvf PhpStorm-2016.2.1.tar.gz
+sudo mv PhpStorm-162.1889.1/ /opt/phpstorm/
+sudo ln -s /opt/phpstorm/bin/phpstorm.sh /usr/local/bin/phpstorm
+
+## Sublime text
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install -y sublime-text-installer
 
 ## Universe repository & Google Chrome
 sudo add-apt-repository universe
