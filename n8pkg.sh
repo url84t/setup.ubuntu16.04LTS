@@ -15,6 +15,10 @@ sudo apt-get install -y gdm
 sudo apt-get install -y evolution
 sudo apt-get install -y mysql-workbench
 sudo apt-get install -y gimp
+sudo apt-get install -y cpanminus
+sudo apt-get install -y perl-doc
+sudo apt-get install -y libb-lint-perl
+sudo apt-get install -y libperl-critic-perl
 
 ## Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.2-amd64.deb
