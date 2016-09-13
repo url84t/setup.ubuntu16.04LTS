@@ -19,6 +19,17 @@ sudo apt-get install -y cpanminus
 sudo apt-get install -y perl-doc
 sudo apt-get install -y libb-lint-perl
 sudo apt-get install -y libperl-critic-perl
+sudo apt-get install -y shutter
+sudo apt-get install -y git-core automake libtool
+sudo apt-get install -y cmake
+
+
+## Tidy html5
+git clone https://github.com/w3c/tidy-html5
+cd tidy-html5/build/cmake/
+cmake ../.. -DCMAKE_BUILD_TYPE=Release
+make
+sudo make install
 
 ## Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.1.2-amd64.deb
